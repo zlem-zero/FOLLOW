@@ -1,0 +1,18 @@
+fetch("https://playentry.org/graphql", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+    "content-type": "application/json",
+    "sec-ch-ua": "\"Chromium\";v=\"86\", \"\\\"Not\\\\A;Brand\";v=\"99\", \"Whale\";v=\"2\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin"
+  },
+  "referrer": "https://playentry.org/profile/601b9be9bb17263e263fec32/follower",
+  "referrerPolicy": "no-referrer-when-downgrade",
+  "body": "{\"query\":\"mutation FOLLOW($user: String) {\\n  follow(user: $user) {\\n    id\\n    user {\\n      id\\n      username\\n      nickname\\n      profileImage {\\n        id\\n        name\\n        label {\\n          ko\\n          en\\n          ja\\n          vn\\n          __typename\\n        }\\n        filename\\n        imageType\\n        dimension {\\n          width\\n          height\\n          __typename\\n        }\\n        trimmed {\\n          filename\\n          width\\n          height\\n          __typename\\n        }\\n        __typename\\n      }\\n      status {\\n        following\\n        follower\\n        __typename\\n      }\\n      __typename\\n    }\\n    follow {\\n      id\\n      username\\n      nickname\\n      profileImage {\\n        id\\n        name\\n        label {\\n          ko\\n          en\\n          ja\\n          vn\\n          __typename\\n        }\\n        filename\\n        imageType\\n        dimension {\\n          width\\n          height\\n          __typename\\n        }\\n        trimmed {\\n          filename\\n          width\\n          height\\n          __typename\\n        }\\n        __typename\\n      }\\n      status {\\n        following\\n        follower\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\",\"operationName\":\"FOLLOW\",\"variables\":{\"user\":\"601b9be9bb17263e263fec32\"}}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
